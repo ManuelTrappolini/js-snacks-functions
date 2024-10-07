@@ -11,7 +11,7 @@ console.log(hours);
 
 
 // Dichiara la funzione qui.
-function helloThere(nome){
+/* function helloThere(){
     if(hours <= 13){
         return 'Buon giorno' +  ` ${name}`
     }
@@ -23,14 +23,30 @@ function helloThere(nome){
    else{
     return 'Buona sera' + ` ${name}`
    }
-}  
+}   */
 
 // Invoca la funzione qui e stampa il risultato in console
+
+/* console.log(helloThere()); */
+
+
+
+//arrow function 
+const helloThere = () => {
+    if(hours <= 13){
+        return 'Buon giorno' +  ` ${name}`
+    }
+   
+    else if(hours <= 17){
+        return 'Buon pomeriggio' + ` ${name}`
+    }
+   
+   else{
+    return 'Buona sera' + ` ${name}`
+   }
+}
 
 console.log(helloThere());
-
-// Invoca la funzione qui e stampa il risultato in console
-
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.

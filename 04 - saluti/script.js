@@ -21,6 +21,6 @@ const name = 'Mario';
 
 // Invoca la funzione qui e stampa il risultato in console
 
-console.log(helloThere(' '+`${name}`));
+console.log(helloThere(` ${name}`));
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
