@@ -4,10 +4,21 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
+function IntialsChar(array, character){
+    let newArray = [];
+    for(let i = 0; i < names.length; i++){
+        if(array[i].startsWith(character)){
+            newArray.push(array[i])
+        }
+        
+}
+    return newArray;
+}
 
 
 // Invoca la funzione qui e stampa il risultato in console
 
+console.log(IntialsChar(names, 'A'));
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
