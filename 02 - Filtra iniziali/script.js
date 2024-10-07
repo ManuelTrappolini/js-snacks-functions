@@ -4,7 +4,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-function IntialsChar(array, character){
+function initialsChar(array, character){
     let newArray = [];
     for(let i = 0; i < names.length; i++){
         if(array[i].startsWith(character)){
@@ -18,7 +18,19 @@ function IntialsChar(array, character){
 
 // Invoca la funzione qui e stampa il risultato in console
 
-console.log(IntialsChar(names, 'A'));
+console.log(initialsChar(names, 'A'));
 
+//arrow function
+const initialsChar2 = (array,character) =>{
+    let newArray = [];
+    for(let i = 0; i < names.length; i++){
+        if(array[i].startsWith(character)){
+            newArray.push(array[i])
+        }
+        
+}
+    return newArray;
+}
+console.log(initialsChar2(names, 'A'));
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
