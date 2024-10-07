@@ -6,10 +6,28 @@ e buonasera se è sera (oltre le 17)
 */
 
 const name = 'Mario';
+let hours = new Date().getHours()
+console.log(hours);
 
 
 // Dichiara la funzione qui.
+function helloThere(nome){
+    if(hours <= 13){
+        return 'Buon giorno' +  ` ${name}`
+    }
+   
+    else if(hours <= 17){
+        return 'Buon pomeriggio' + ` ${name}`
+    }
+   
+   else{
+    return 'Buona sera' + ` ${name}`
+   }
+}  
 
+// Invoca la funzione qui e stampa il risultato in console
+
+console.log(helloThere());
 
 // Invoca la funzione qui e stampa il risultato in console
 
