@@ -4,17 +4,23 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
-function helloThere(name){
+/* function helloThere(name){
    askName = prompt('Inserisci il tuo nome qui')
    let greeting = `Ciao ${askName}` 
    console.log(greeting);
    alert(`Ciao ${askName}`)
    
 
-}
+} */
+
+   function helloThere(nome){
+    let greet = 'Ciao'
+    return greet + nome
+   }
+   
 
 // Invoca la funzione qui e stampa il risultato in console
 
-helloThere()
+console.log(helloThere(' '+`${name}`));
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
