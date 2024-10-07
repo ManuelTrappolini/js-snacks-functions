@@ -23,4 +23,21 @@ function searchForVowels(){
 
 searchForVowels()
 
+//arrow function 
+const searchForVowels2 = () =>{
+    let vowels = ['a','e','i','o','u']
+    let count = 0
+    for(let i = 0; i < word.length; i++){
+        
+        if(vowels.includes(word[i])){
+            
+            count ++
+        }
+        
+    }
+    console.log(word, count,);
+}
+
+searchForVowels2()
+
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
