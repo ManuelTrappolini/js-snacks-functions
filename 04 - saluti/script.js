@@ -23,4 +23,15 @@ const name = 'Mario';
 
 console.log(helloThere(` ${name}`));
 
+
+//arrow function
+
+const helloThere2 = nome => {
+    let greet = 'Ciao'
+    return greet + nome
+}
+
+console.log(helloThere2(' Mario'));
+
+
 //Risultato atteso se si passa 'Mario': // ciao Mario
