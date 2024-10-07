@@ -5,12 +5,15 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
 function printChar(){
+    let initialsChar = [];
     for(let i = 0; i< names.length; i++){
-        console.log(names[i].charAt(0));
+        let printCharac = names[i].charAt(0)
+        initialsChar.push(printCharac)   
     }
-    }
+    console.log(initialsChar)
+}
 // Invoca la funzione qui e stampa il risultato in console
 
-printChar(names)
+printChar()
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
