@@ -4,28 +4,28 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-function printChar(){
+function printChar(array){
     let initialsChar = [];
-    for(let i = 0; i< names.length; i++){
-        let printCharac = names[i].charAt(0)
+    for(let i = 0; i< array.length; i++){
+        let printCharac = array[i].charAt(0)
         initialsChar.push(printCharac)   
     }
     console.log(initialsChar)
 }
 // Invoca la funzione qui e stampa il risultato in console
 
-printChar()
+printChar(names)
 
 // arrow function
-const printChar2 = () => {
+const printChar2 = (array) => {
     let initialsChar = [];
-    for(let i = 0; i< names.length; i++){
-        let printCharac = names[i].charAt(0)
+    for(let i = 0; i< array.length; i++){
+        let printCharac = array[i].charAt(0)
         initialsChar.push(printCharac)   
     }
     console.log(initialsChar)
 }
 
-printChar2()
+printChar2(names)
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]

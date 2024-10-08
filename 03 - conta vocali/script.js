@@ -4,40 +4,40 @@ const word = 'javascript';
 
 
 // Dichiara la funzione qui.
-function searchForVowels(){
+function searchForVowels(str){
     let vowels = ['a','e','i','o','u']
     let count = 0
-    for(let i = 0; i < word.length; i++){
-        
-        if(vowels.includes(word[i])){
+    for(let i = 0; i < str.length; i++){
+        const element = str[i]
+        if(vowels.includes(str[i])){
             
             count ++
         }
         
     }
-    console.log(word, count,);
+    console.log(str, count);
     
 }
 
 // Invoca la funzione qui e stampa il risultato in console
 
-searchForVowels()
+searchForVowels(word)
 
 //arrow function 
-const searchForVowels2 = () =>{
+const searchForVowels2 = (str) =>{
     let vowels = ['a','e','i','o','u']
     let count = 0
-    for(let i = 0; i < word.length; i++){
-        
-        if(vowels.includes(word[i])){
+    for(let i = 0; i < str.length; i++){
+        const element = str[i]
+        if(vowels.includes(str[i])){
             
             count ++
         }
         
     }
-    console.log(word, count,);
+    console.log(str, count,);
 }
 
-searchForVowels2()
+searchForVowels2(word)
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)

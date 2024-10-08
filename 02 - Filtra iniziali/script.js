@@ -6,7 +6,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 // Dichiara la funzione qui.
 function initialsChar(array, character){
     let newArray = [];
-    for(let i = 0; i < names.length; i++){
+    for(let i = 0; i < array.length; i++){
         if(array[i].startsWith(character)){
             newArray.push(array[i])
         }
@@ -23,7 +23,7 @@ console.log(initialsChar(names, 'A'));
 //arrow function
 const initialsChar2 = (array,character) =>{
     let newArray = [];
-    for(let i = 0; i < names.length; i++){
+    for(let i = 0; i < array.length; i++){
         if(array[i].startsWith(character)){
             newArray.push(array[i])
         }
